@@ -1,0 +1,7 @@
+trained_logs_*/
+trained_models_*/
+ckpts/
+wandb/
+__pycache__/
+data/
+
