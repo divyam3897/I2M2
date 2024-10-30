@@ -1,6 +1,6 @@
 <div align="center">
 
-# A Framework for Multi-modal Learning:<br> Jointly Modeling Inter- & Intra-Modality Dependencies
+# Jointly Modeling Inter- & Intra-Modality Dependencies for Multi-modal Learning
 </div>
 
 **TL;DR: We distinguish between different modeling paradigms for multi-modal learning from the perspective of generative models and offer a general recipe for designing models that efficiently leverage multi-modal data, leading to more accurate predictions.**
@@ -9,8 +9,7 @@
 ## Abstract
 Supervised multi-modal learning involves mapping multiple modalities to a target label.
 Previous studies in this field have concentrated on capturing in isolation either the inter-modality dependencies (the relationships between different modalities and the label) or the intra-modality dependencies (the relationships within a single modality and the label). 
-We argue that these conventional approaches that rely solely on either inter- or intra-modality dependencies may not be optimal in general.
-We view the multi-modal learning problem from the lens of generative models where we consider the target as a source of multiple modalities and the interaction between them. Towards that end, we propose inter- \& intra-modality modeling (I2M2) framework, which captures and integrates both the inter- and intra-modality dependencies, leading to more accurate predictions. 
+We argue that these conventional approaches that rely solely on either inter- or intra-modality dependencies may not be optimal in general.We view the multi-modal learning problem from the lens of generative models where we consider the target as a source of multiple modalities and the interaction between them. Towards that end, we propose inter- \& intra-modality modeling (I2M2) framework, which captures and integrates both the inter- and intra-modality dependencies, leading to more accurate predictions. 
 We evaluate our approach using real-world healthcare and vision-and-language datasets with state-of-the-art models, demonstrating superior performance over traditional methods focusing only on one type of modality dependency. 
 
 ## Prerequisites
@@ -50,3 +49,25 @@ uation encompasses the IID and nine out-of-distribution
 text description correctly describes a pair of two images.
 - **Instructions:** Comprehensive guidelines on these datasets are available in the [README in the VQA_and_NLVR2 folder](/vqa_nlvr/README.md).
 
+# Contributing
+
+We'd love to accept your contributions to this project. Please feel free to open an issue, or submit a pull request as necessary. If you have implementations of this repository in other ML frameworks, please reach out so we may highlight them here.
+
+## License
+
+This codebase is released under [MIT License](https://github.com/divyam3897/I2M2/blob/main/LICENSE).
+
+## 📌 Citation
+
+If you find this paper useful, please consider staring 🌟 this repo and citing 📑 our paper:
+
+```bibtex
+@inproceedings{
+  madaan2024jointly,
+  title={Jointly Modeling Inter- \& Intra-Modality Dependencies for Multi-modal Learning},
+  author={Divyam Madaan, Taro Makino, Sumit Chopra, Kyunghyun Cho},
+  booktitle={The Thirty-eighth Annual Conference on Neural Information Processing Systems},
+  year={2024},
+  url={https://openreview.net/forum?id=XAKALzI3Gw}
+}
+```
